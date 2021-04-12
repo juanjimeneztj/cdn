@@ -54,8 +54,8 @@
           <div class="row align-items-center">
             <div class="col pt-5 pt-md-9">
               <h1 class="mb-4 display-3 fw-bold">How to submit form data to Hubspot API Javascript?</h1>
-              <p class="mt-3">we collect all the data from the form</p>
-              <pre class="bg-dark p-3 text-white"><code>data = $( "form" ).serializeArray();
+              <p class="mt-4 fs-1">we collect all the data from the form</p>
+              <pre class="bg-dark p-3 text-white"><code>let data = $( "form" ).serializeArray();
 //o
 data = [
     {
@@ -64,6 +64,11 @@ data = [
     },
 ...
 ]; </code></pre>
+              <p class="mt-3 fs-1">we prepare the fields to send and put them in json format</p>
+              <pre class="bg-dark p-3 text-white"><code>let json_value = {
+    "fields": data,
+    "skipValidation": false
+};</code></pre>
             </div>
           </div>
         </div>
