@@ -55,7 +55,18 @@
             <div class="col pt-5 pt-md-9">
               <h1 class="mb-4 display-3 fw-bold">How to submit form data to Hubspot API Javascript?</h1>
               <p class="mt-3">we collect all the data from the form</p>
-              <pre class="prettyprint linenums">
+              <pre class="prettyprint lang-html linenums prettyprinted">
+                  <ol class="linenums">
+                      <li class="L0">data = $( "form" ).serializeArray();</li>
+                      <li class="L1">//o</li>
+                      <li class="L2">data = [</li>
+                      <li class="L3">{</li>
+                      <li class="L4">"name": "email",</li>
+                      <li class="L5">"value": email@dominio.com</li>
+                      <li class="L6">},</li>
+                      <li class="L7">...</li>
+                      <li class="L8">];</li>
+                  </ol>
                 Many
                 lines
                 of
