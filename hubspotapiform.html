@@ -55,22 +55,17 @@
             <div class="col pt-5 pt-md-9">
               <h1 class="mb-4 display-3 fw-bold">How to submit form data to Hubspot API Javascript?</h1>
               <p class="mt-3">we collect all the data from the form</p>
-              <pre class="prettyprint bg-dark p-3 text-white">
-                  <ol class="linenums" style="line-height: 14px;">
-                    <li>data = $( "form" ).serializeArray();</li>
-                    <li>//o</li>
-                    <li>data = [</li>
-                    <li>{<!--<li-->
-                    </li><li>"name": "email",</li>
-                    <li>"value": email@dominio.com</li>
-                    <li>},</li>
-                    <li>...</li>
-                    <li>];</li>
-                </ol>
+              <pre class="bg-dark p-3 text-white">
+                  <code>data = $( "form" ).serializeArray();
+                    //o
+                    data = [
+                        {
+                          "name": "email",
+                          "value": email@dominio.com
+                        },
+                    ...
+                    ]; </code>
               </pre>
-              <p class="bg-dark p-3 text-white">
-                  &lt;link href=&quot;https://juanjimeneztj.github.io/cdn/css/theme/newmoneytraders.css&quot; rel=&quot;stylesheet&quot; /&gt;
-                </p>
             </div>
           </div>
         </div>
