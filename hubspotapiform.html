@@ -54,7 +54,9 @@
           <div class="row align-items-center">
             <div class="col pt-5 pt-md-9">
               <h1 class="mb-4 display-3 fw-bold">How to submit form data to Hubspot API Javascript?</h1>
-              <p class="mt-4 fs-1">We collect all the data from the form</p>
+              <p class="mt-4 fs-1">This procedure was created from the hubspot documentation, if you want to read a little more about the parameters you can visit <a href="https://legacydocs.hubspot.com/docs/methods/forms/submit_form" target="_blank" rel="noopener noreferrer" class="fw-bold">the hubspot documentation here</a></p>
+
+              <p class="mt-5 fs-1">We collect all the data from the form</p>
               <pre class="bg-dark p-3 text-white"><code>let data = $( "form" ).serializeArray();
 //o
 data = [
@@ -94,7 +96,35 @@ data = [
     "message": "",
     ...
 } </code></pre>
-               <p class="mt-3 fs-1">Reference page where this procedure was applied as well as the shipment to bronto and the CSV file -> <a href="https://tipsfortraders.com/featuredcompany/kore/" target="_blank" rel="noopener noreferrer">Click here!</a></p>
+              <p class="mt-3 fs-1">Once the previus steps have been carried out, you should have something similar to the dowllowing script:</p>
+              <pre class="bg-dark p-3 text-white"><code>$('form').submit(function(event){
+// we prevent the submission of the form
+event.preventDefault();
+
+// we get the email from the form
+let gswebEmail = $(this).find('input[type=email]').val();
+let data = [
+    {
+    "name": "email",
+    "value": gswebEmail
+    }
+];
+let json_value = {
+    "fields": data,
+    "skipValidation": false
+};
+$.ajax({
+    url: 'https://api.hsforms.com/submissions/v3/integration/submit/id_cuenta/id_formulario',
+    type: 'post',
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(json_value),
+    success: function (response) {
+        console.log(response);
+    }
+});
+});</code></pre>
+
                <p class="mt-3 fs-1"><a href="mailto:info@juanjimeneztj.com">If you have questions about this, do not hesitate to contact me, I will be happy to give you support.</a></p>
             </div>
           </div>
