@@ -56,17 +56,17 @@
               <h1 class="mb-4 display-3 fw-bold">How to submit form data to Hubspot API Javascript?</h1>
               
               <p class="mt-5 fs-1">When you have created the form in the hubspot panel, they will provide you with a script like the following one, from this script we will obtain the values of the portalId and formId:</p>
-              <pre class="bg-dark p-3 text-white"><code><!--[if lte IE 8]>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
+              <pre class="bg-dark p-3 text-white"><code>&lt;!--[if lte IE 8]&gt;
+    &lt;script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"&gt;&lt;/script&gt;
+&lt;script&gt;
     hbspt.forms.create({
         region: "na1",
         portalId: "XXXXXXXX",
         formId: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX"
     });
-</script></code></pre>
+&lt;/script&gt;</code></pre>
               <p class="mt-5 fs-1">We collect all the data from the form</p>
               <pre class="bg-dark p-3 text-white"><code>let data = $( "form" ).serializeArray();
 //o
