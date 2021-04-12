@@ -54,21 +54,48 @@
           <div class="row align-items-center">
             <div class="col pt-5 pt-md-9">
               <h1 class="mb-4 display-3 fw-bold">How to submit form data to Hubspot API Javascript?</h1>
-              <p class="mt-4 fs-1">we collect all the data from the form</p>
+              <p class="mt-4 fs-1">We collect all the data from the form</p>
               <pre class="bg-dark p-3 text-white"><code>let data = $( "form" ).serializeArray();
 //o
 data = [
     {
         "name": "email",
-        "value": email@dominio.com
+        "value": info@juanjimeneztj.com
     },
 ...
 ]; </code></pre>
-              <p class="mt-3 fs-1">we prepare the fields to send and put them in json format</p>
+              <p class="mt-3 fs-1">We prepare the fields to send and put them in json format</p>
               <pre class="bg-dark p-3 text-white"><code>let json_value = {
     "fields": data,
     "skipValidation": false
 };</code></pre>
+              <p class="mt-3 fs-1">We send all the data by ajax</p>
+              <pre class="bg-dark p-3 text-white"><code>$.ajax({
+    url: 'https://api.hsforms.com/submissions/v3/integration/submit/id_cuenta/id_formulario',
+    type: 'post',
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(json_value),
+    success: function (resp) {
+        console.log(resp);
+    },
+});</code></pre>
+              <p class="mt-3 fs-1">Result if all its fine</p>
+              <pre class="bg-dark p-3 text-white"><code>{
+    "thankYouMessage": "Thanks!",
+}
+//o 
+{
+    "redirectUri": "https://juanjimeneztj.com/redirect",
+}</code></pre>
+              <p class="mt-3 fs-1">In case of error</p>
+              <pre class="bg-dark p-3 text-white"><code>{
+    "status": "error",
+    "message": "",
+    ...
+} </code></pre>
+               <p class="mt-3 fs-1">Reference page where this procedure was applied as well as the shipment to bronto and the CSV file -> <a href="https://tipsfortraders.com/featuredcompany/kore/" target="_blank" rel="noopener noreferrer">Click here!</a></p>
+               <p class="mt-3 fs-1"><a href="mailto:info@juanjimeneztj.com">If you have questions about this, do not hesitate to contact me, I will be happy to give you support.</a></p>
             </div>
           </div>
         </div>
