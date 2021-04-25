@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>CDN | Financial Media  Corp. | By Noe Gomez / Juan Jimenez</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="shortcut icon" type="image/x-icon" href="https://finmc.com/img2/favicon.ico">
+    
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="https://juanjimeneztj.github.io/cdn/css/fontawesome/5.15.3/all.min.css" rel="stylesheet" />
+    <script src="https://juanjimeneztj.github.io/cdn/js/fontawesome/5.15.3/all.min.js" ></script>
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html"><img class="d-inline-block me-3" src="https://finmc.com/img2/favicon.ico" alt="" />CDN SIP</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#toc">Table of content</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="py-0 pb-5">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/dot.png);background-position:left;background-size:auto;margin-top:-105px;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container position-relative">
+          <div class="row align-items-center">
+            <div class="col pt-5 pt-md-9">
+              <h1 class="mb-4 display-3 fw-bold">How can I Develop and configure a funnel for Rogue Investing?</h1>
+              
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Quick Description</h5>
+                  <p class="card-text">The funnel template is mainly focused on making it easier and faster to develop new funnels by making most of the changes to <i><strong>setup.php, config.php, and pages folder</strong></i>.</p>
+
+
+                  <h3 class="card-title mt-5">Before starting</h3>
+                  <p class="card-text">Download the version of the funnel template to be able to start working.</p>
+                  
+                  <a class="btn btn-primary" href="#"><i class="fab fa-github"></i> Download</a>
+                
+                  <p class="mt-5">when you have downloaded the ZIP file, unzip it and rename the folder with the name of the new funnel</p>
+                
+                  <p>then we move the new funnel where it has the rest of the RogueInvesting funnels</p>
+                
+                  <div class="row">
+                      <div class="col-8">
+                        <figure class="figure">
+                            <img src="./assets/img/funnel/FunnelTemplate.png" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p class="mt-5">Once the new funnel folder is added like in the previous image I shared, you can open your preferred web browser and visit the new funnel path to get a result like this</p>
+
+                  <div class="row">
+                    <div class="col-9">
+                      <figure class="figure">
+                          <img src="./assets/img/funnel/pagina_default.png" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                        </figure>                        
+
+                        <div class="alert alert-success text-center" role="alert">
+                            <i class="fas fa-check-circle"></i> If you get this screen in your browser, you can now start setting up the new funnel as below.
+                         </div>
+
+                         <div class="alert alert-danger text-center" role="alert">
+                            <i class="fas fa-exclamation-circle"></i> this needs to be tested on a local server to work properly <em>(I use xampp).</em>
+                         </div>
+
+                        
+
+                       
+                    </div>
+                </div>
+                </div>
+              </div>
+
+
+              <h2 class="mt-5">Start with Development and Configuration</h2>
+              <p><strong class="fw-bold">Before starting all this we must already have the information of the pages (graphics, Copys) and everything that involves doing the funnel configuration.</strong> Here I am going to divide the development of the funnel into parts.</p>
+
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Setup.php
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>This file will be found in the main folder of the funnel</p>
+
+                      <div class="row">
+                        <div class="col-8">
+                          <figure class="figure">
+                              <img src="./assets/img/funnel/funnel_setup.png" class="figure-img img-fluid rounded" alt="...">
+                              <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p>Open the <strong>setup.php</strong> file with the editor of your choice</p>
+
+                    <p>when you open the file you will have something similar to this in your editor</p>
+
+                    <div class="row">
+                        <div class="col-8">
+                          <figure class="figure">
+                              <img src="./assets/img/funnel/setup2.png" class="figure-img img-fluid rounded" alt="...">
+                              <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p>In this file most of the configuration will be the tabs of the microsite where we are going to define the dates and titles of the tabs.</p>
+                    
+                    <div class="alert alert-success text-center" role="alert">
+                        <i class="fas fa-comment"></i> possibly you will get a file like this where you can get most of the information for this part <a href="https://docs.google.com/drawings/d/1AXmyHDWedK9r0rXUxM1UvlPLgfaSOD6jHGPeDr7T3LM/edit" target="_blank">Click here to see the example</a></em>
+                     </div>
+
+                     <h4>short definition of the setup.php file</h4>
+
+                     <ol>
+                         <li><h5 class="fw-bold">tabs</h5> here we define the titles and dates for each tab of the microsite</li>
+                         <li><h5 class="mt-3 fw-bold">LiveEvent</h5> here we put the date of the live event, this date is taken by the countdown counters</li>
+                         <li><h5 class="mt-3 fw-bold">showModal</h5> here we put the date to show exit modal </li>
+                         <li><h5 class="mt-3 fw-bold">step_redirect </h5> here we define the step and set it to true to redirect LPs, microsite pages, and waitingroom when it's time for the live event. <br> <div class="alert alert-danger text-center" role="alert">
+                            <i class="fas fa-exclamation-circle"></i> to do the redirect just make sure you set activate to true</em>
+                         </div></li>
+                         <li><h5 class="mt-3 fw-bold">TimeZone</h5> here we only define the time zone. <div class="alert alert-success text-center" role="alert">
+                            <i class="fas fa-check-circle"></i> by default it has the time zone of <strong>America / New_York</strong></em>
+                         </div></li>
+                         <li><h5 class="mt-3 fw-bold">$URLGoogleCalendar </h5> here just put the google calendar path to be provided with the funnel information</li>
+                         <li><h5 class="mt-3 fw-bold">$URLOutlook</h5> Here you will receive a file in .ics format that you have to put in the <strong>assets/outlook/</strong> folder and in the <strong>setup.php</strong> file just put the name of the file 
+                            <div class="row">
+                                <div class="col-8 mt-2">
+                                  <figure class="figure">
+                                      <img src="./assets/img/funnel/Screenshot_1.png" class="figure-img img-fluid rounded" alt="...">
+                                      <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </li>
+                     </ol>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pages Folder
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      
+                        <p>Here you will find a variety of templates that you can identify with their name to be able to add the corresponding copy to each page.</p>
+                        
+                        <div class="row">
+                            <div class="col-8">
+                              <figure class="figure">
+                                  <img src="./assets/img/funnel/carpeta_pages.png" class="figure-img img-fluid rounded" alt="...">
+                                  <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <p>At the moment these are the pages that make up a funnel, more can be added if requested</p>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Config.php
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
+    <!-- ===============================================-->
+    <!--    PrettyCode-->
+    <!-- ===============================================-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  </body>
+
+</html>
