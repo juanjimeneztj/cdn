@@ -75,7 +75,7 @@
                   <div class="row">
                       <div class="col-8">
                         <figure class="figure">
-                            <img src="./assets/img/funnel/FunnelTemplate.png" class="figure-img img-fluid rounded" alt="...">
+                            <img src="./assets/img/funnel/FunnelTemplate.png" class="gallery-item figure-img img-fluid rounded" alt="...">
                             <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
                           </figure>
                       </div>
@@ -86,7 +86,7 @@
                   <div class="row">
                     <div class="col-9">
                       <figure class="figure">
-                          <img src="./assets/img/funnel/pagina_default.png" class="figure-img img-fluid rounded" alt="...">
+                          <img src="./assets/img/funnel/pagina_default.png" class="gallery-item figure-img img-fluid rounded" alt="...">
                           <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
                         </figure>                        
 
@@ -114,18 +114,18 @@
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Setup.php
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <i class="fas fa-file-code"></i> &nbsp;  Setup.php
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>This file will be found in the main folder of the funnel</p>
 
                       <div class="row">
                         <div class="col-8">
                           <figure class="figure">
-                              <img src="./assets/img/funnel/funnel_setup.png" class="figure-img img-fluid rounded" alt="...">
+                              <img src="./assets/img/funnel/funnel_setup.png" class="gallery-item figure-img img-fluid rounded" alt="...">
                               <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
                             </figure>
                         </div>
@@ -138,7 +138,7 @@
                     <div class="row">
                         <div class="col-8">
                           <figure class="figure">
-                              <img src="./assets/img/funnel/setup2.png" class="figure-img img-fluid rounded" alt="...">
+                              <img src="./assets/img/funnel/setup2.png" class="gallery-item figure-img img-fluid rounded" alt="...">
                               <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
                             </figure>
                         </div>
@@ -162,12 +162,12 @@
                          <li><h5 class="mt-3 fw-bold">TimeZone</h5> here we only define the time zone. <div class="alert alert-success text-center" role="alert">
                             <i class="fas fa-check-circle"></i> by default it has the time zone of <strong>America / New_York</strong></em>
                          </div></li>
-                         <li><h5 class="mt-3 fw-bold">$URLGoogleCalendar </h5> here just put the google calendar path to be provided with the funnel information</li>
+                         <li><h5 class="mt-3 fw-bold">$URLGoogleCalendar </h5> Here it is only to place the URL of the google calendar that will be provided with the information of the event</li>
                          <li><h5 class="mt-3 fw-bold">$URLOutlook</h5> Here you will receive a file in .ics format that you have to put in the <strong>assets/outlook/</strong> folder and in the <strong>setup.php</strong> file just put the name of the file 
                             <div class="row">
                                 <div class="col-8 mt-2">
                                   <figure class="figure">
-                                      <img src="./assets/img/funnel/Screenshot_1.png" class="figure-img img-fluid rounded" alt="...">
+                                      <img src="./assets/img/funnel/Screenshot_1.png" class="gallery-item figure-img img-fluid rounded" alt="...">
                                       <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
                                     </figure>
                                 </div>
@@ -181,7 +181,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Pages Folder
+                      <i class="fas fa-folder"></i> &nbsp;Pages
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -192,36 +192,140 @@
                         <div class="row">
                             <div class="col-8">
                               <figure class="figure">
-                                  <img src="./assets/img/funnel/carpeta_pages.png" class="figure-img img-fluid rounded" alt="...">
+                                  <img src="./assets/img/funnel/carpeta_pages.png" class="gallery-item figure-img img-fluid rounded" alt="...">
                                   <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
                                 </figure>
                             </div>
                         </div>
 
                         <p>At the moment these are the pages that make up a funnel, more can be added if requested</p>
-                    
-                    </div>
+                        
+                        <p>each folder only has the index.php file in which you just need to update the new copy.</p>
+                        
+                        <p>If for some reason you need to restructure a page, you can do it without any problem since these pages are developed with the <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap 5 framework</a>.</p>
+
+                        <div class="alert alert-success text-center" role="alert">
+                          <i class="fas fa-comment"></i> Anyone with knowledge of HTML and CSS should have no problem restructuring a page or creating a new one.</em>
+                       </div>
+
+                       <h5><i class="fas fa-folder"></i> Assets</h5>
+                       <p>If you need to update or add graphics or CSS files, it can all be done within the assets folder found in the main folder of the funnel.</p>
+                      
+                       <div class="row">
+                          <div class="col-8">
+                            <figure class="figure">
+                                <img src="./assets/img/funnel/assets.png" class="gallery-item figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                      </div>                     
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Config.php
+                      <i class="fas fa-file-code"></i> &nbsp;  Config.php
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <p>I will give you a brief explanation of how this file works</p>
+                      <p><strong>config.php</strong> file is divided into two SWITCH <em>(step and prod)</em></p>
+
+                      <h4><i class="fas fa-chevron-right"></i> <strong class="fw-bold"> Switch['step']</strong> </h4>
+
+                      <p>In this file we configure or define the step that will correspond to each page, so when they enter the funnel and are in a certain step, you must show them the page that you configured in that step</p>
+
+                      <p>I share an image so you can see what I am trying to explain to you</p>
+                      <div class="gallery">
+                      <div class="row">
+                        <div class="col-4">
+                          <figure class="figure">
+                              <img src="./assets/img/funnel/config_step.png" class="gallery-item figure-img img-fluid rounded" alt="...">
+                              <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-4">
+                          <figure class="figure">
+                              <img src="./assets/img/funnel/config_step_2.png" class="gallery-item figure-img img-fluid rounded" alt="...">
+                             
+                            </figure>
+                        </div>
+                        <div class="col-4">
+                          <figure class="figure">
+                              <img src="./assets/img/funnel/config_step_3.png" class="gallery-item figure-img img-fluid rounded" alt="...">
+                             
+                            </figure>
+                        </div>
+                    </div>
+                    </div>
+
+                    <p>If you look at the image in detail you will notice that in each case there is a step that corresponds to a certain page, <em><strong>for example rv0a you define it for LP1 and rv1a for the first tab of the microsite</strong></em>. This applies to the more pages that belong to this funnel.</p>
+
+                    <ul>
+                      <li><h5 class="fw-bold">$data[step]</h5> we assign the step we are currently in</li>
+                      <li><h5 class="fw-bold mt-3">$page</h5> we define and show the page that will correspond to this step</li>
+                      <li><h5 class="fw-bold mt-3">if (!Utils::isPost()) $data['prod'] = 'reg'</h5> this is an if condition that must be met to perform an action on the switch ['prod'] </li>
+                      <li><h5 class="fw-bold mt-3">$next</h5> only the next step is added and it will be applied when the if condition has been met</li>
+                    </ul>
+                      <h4><i class="fas fa-chevron-right"></i> <strong class="fw-bold"> Switch['prod']</strong> </h4>
+                      <p class="mb-3" >Then I show you in the following images almost the majority of actions that are carried out in switch ['prod']</p>
+                      <div class="gallery">
+                        <div class="row">
+                          <div class="col-4">
+                            <figure class="figure">
+                                <img src="./assets/img/funnel/prod_1.png" class="gallery-item figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption text-start fw-bold">Example - as seen in the picture</figcaption>
+                              </figure>
+                          </div>
+                          <div class="col-4">
+                            <figure class="figure">
+                                <img src="./assets/img/funnel/prod_2.png" class="gallery-item figure-img img-fluid rounded" alt="...">
+                               
+                              </figure>
+                          </div>
+                          <div class="col-4">
+                            <figure class="figure">
+                                <img src="./assets/img/funnel/prod_3.png" class="gallery-item figure-img img-fluid rounded" data-toggle="modal" data-target="#modal1" alt="...">
+                               
+                              </figure>
+                          </div>
+                      </div>
+                      </div>
+
+                      <p>This switch is where the sending of SMS is configured, where the records that are made in each LP are sent and where the names, codes and prices of the products are added for the sales forces.</p>
+                    
                     </div>
                   </div>
                 </div>
               </div>
+
+
+              <div class="alert alert-danger text-center mt-5" role="alert">
+                <i class="fas fa-exclamation-circle"></i> This documentation will be updated as more requirements are added or new improvements are applied to the funnel. since this funnel template is the first version</em>
+             </div>
               
               
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/img/funnel/prod_1.png" class="modal-img figure-img img-fluid" alt="modal img">
+            </div>
+          </div>
+        </div>
+      </div>
 
     </main>
     <!-- ===============================================-->
@@ -237,6 +341,7 @@
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/gallery.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
     <!-- ===============================================-->
