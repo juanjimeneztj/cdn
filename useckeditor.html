@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>CDN | Financial Media  Corp. | By Noe Gomez / Juan Jimenez</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="shortcut icon" type="image/x-icon" href="https://finmc.com/img2/favicon.ico">
+    
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html"><img class="d-inline-block me-3" src="https://finmc.com/img2/favicon.ico" alt="" />CDN SIP</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#toc">Table of content</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="py-0 pb-5">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/dot.png);background-position:left;background-size:auto;margin-top:-105px;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container position-relative">
+          <div class="row align-items-center">
+            <div class="col pt-5 pt-md-9">
+              <h1 class="mb-4 display-3 fw-bold">How to use CKEditor => (WIP)</h1>
+              
+              <textarea name="exampleDescription" id="editor1" cols="100%" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
+    <!-- ===============================================-->
+    <!--    PrettyCode-->
+    <!-- ===============================================-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="plugins/ckeditor/ckeditor.js"></script>
+    <script src="plugins/ckfinder/ckfinder.js"></script>
+    <script>
+        window.onload = function(){     
+          editor = CKEDITOR.replace("editor1");
+          // CKFinder.setupCKEditor(editor, 'plugins/ckfinder');
+        }
+      </script>
+  </body>
+
+</html>
