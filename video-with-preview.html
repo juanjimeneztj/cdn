@@ -136,6 +136,32 @@
   });
 &lt;/script&gt;</code></pre>
 
+<div class="list-group list-group-numbered mt-5">
+  <a href="#vo" class="list-group-item d-flex justify-content-between align-items-start text-decoration-none">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold text-black">Version Original</div>
+      Version with video preview - Supported only for pages with less than 6 videos within the same page
+    </div>
+    <span class="badge bg-primary rounded-pill">v1.0.0</span>
+  </a>
+  <a href="#v200" class="list-group-item d-flex justify-content-between align-items-start text-decoration-none">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold text-black">Version Beta</div>
+      Version with video preview - Supported only for pages with less than 6 videos within the same page
+    </div>
+    <span class="badge bg-primary rounded-pill">v2.0.0</span>
+  </a>
+  <a href="#v201" class="list-group-item d-flex justify-content-between align-items-start text-decoration-none">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold text-black">Alternate Version - Alpha</div>
+      Version with video preview only to the hover event: compatible for pages with 2 or more videos within the same page
+    </div>
+    <span class="badge bg-primary rounded-pill">v2.0.1</span>
+  </a>
+</div>
+
+                  <h3 class="mt-5" id="vo">Version: Original</h3>
+
                 <div class="table-responsive">
                   <table class="table table-dark table-striped table-hover">
                     <thead>
@@ -187,6 +213,229 @@
                       <tr>
                         <th scope="row">window</th>
                         <td>This parameter is used to configure if the button below the video will open in a new tab, by default the value is false so that the link is opened within the same window, but it can be added and changed to true so that the link is opened in a new tab without replacing the current one.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">full</th>
+                        <td>This parameter is used to configure whether to show/hide the fullscreen button of the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">playBtnColor</th>
+                        <td>This parameter is used to configure the color of the play button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">playColor</th>
+                        <td>This parameter is used to configure the color of the play button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">pauseColor</th>
+                        <td>This parameter is used to configure the color of the pause button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressColor</th>
+                        <td>This parameter is used to configure the color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressBar</th>
+                        <td>This parameter is used to configure the background color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressBgColor</th>
+                        <td>This parameter is used to configure the background color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">theme</th>
+                        <td>This parameter is used to choose previously preconfigured themes for the styles to be used on the player, currently there are two in this player (rogue, theme1 and theme2).</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">tracking</th>
+                        <td>This parameter is used to choose to show or hide the video progress (time).</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Version 2.0.0 -->
+                <h3 class="mt-5" id="v200">Version: 2.0.0</h3>
+
+                <div class="table-responsive">
+                  <table class="table table-dark table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" width="150">Parameter</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">src</th>
+                        <td>This parameter receives the source of the video, if it is a video hosted by ROGUE on AWS, the player automatically recognizes the source, so it is not necessary to add the "domain" parameter.<br /><br />
+
+                          Important note: This player only accepts MP4 type video source, if you try to add any other type of file it is likely that the player will not work properly.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">domain</th>
+                        <td>This parameter is used to add the domain of an external source to ROGUE, for example, if you want to add the following url, it would be as follows:
+                          <pre class="bg-dark p-3 text-white mb-3"><code>&lt;script&gt;
+  $('#video').gswebPlayer({
+    domain: 'https://juanjimeneztj.com/',
+    src: 'media/Placeholder_Video_1080p.mp4'
+  });
+&lt;/script&gt;</code></pre>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progress</th>
+                        <td>This parameter is used to show or hide the progress bar of the video, by default it is false so that it is not shown, but if you want it to be shown you can add the parameter with the value of true.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonText</th>
+                        <td>This parameter is used to add the text to the button that will appear below the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonSrc</th>
+                        <td>This parameter is used to add the url to the button that will appear below the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonClass</th>
+                        <td>This parameter is used to add classes to the button that will appear below the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonTime</th>
+                        <td>This parameter is used to configure the time at which the button will appear below the video.<br /><br />
+
+                          Important note: This parameter must be entered in seconds only.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">window</th>
+                        <td>This parameter is used to configure if the button below the video will open in a new tab, by default the value is false so that the link is opened within the same window, but it can be added and changed to true so that the link is opened in a new tab without replacing the current one.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">full</th>
+                        <td>This parameter is used to configure whether to show/hide the fullscreen button of the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">playBtnColor</th>
+                        <td>This parameter is used to configure the color of the play button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">playColor</th>
+                        <td>This parameter is used to configure the color of the play button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">pauseColor</th>
+                        <td>This parameter is used to configure the color of the pause button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressColor</th>
+                        <td>This parameter is used to configure the color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressBar</th>
+                        <td>This parameter is used to configure the background color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressBgColor</th>
+                        <td>This parameter is used to configure the background color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">theme</th>
+                        <td>This parameter is used to choose previously preconfigured themes for the styles to be used on the player, currently there are two in this player (rogue and theme1).</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+                <!-- Version 2.0.1 -->
+                <h3 class="mt-5" id="v201">Version: 2.0.1</h3>
+
+                <div class="table-responsive">
+                  <table class="table table-dark table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" width="150">Parameter</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">src</th>
+                        <td>This parameter receives the source of the video, if it is a video hosted by ROGUE on AWS, the player automatically recognizes the source, so it is not necessary to add the "domain" parameter.<br /><br />
+
+                          Important note: This player only accepts MP4 type video source, if you try to add any other type of file it is likely that the player will not work properly.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">domain</th>
+                        <td>This parameter is used to add the domain of an external source to ROGUE, for example, if you want to add the following url, it would be as follows:
+                          <pre class="bg-dark p-3 text-white mb-3"><code>&lt;script&gt;
+  $('#video').gswebPlayer({
+    domain: 'https://juanjimeneztj.com/',
+    src: 'media/Placeholder_Video_1080p.mp4'
+  });
+&lt;/script&gt;</code></pre>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progress</th>
+                        <td>This parameter is used to show or hide the progress bar of the video, by default it is false so that it is not shown, but if you want it to be shown you can add the parameter with the value of true.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonText</th>
+                        <td>This parameter is used to add the text to the button that will appear below the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonSrc</th>
+                        <td>This parameter is used to add the url to the button that will appear below the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonClass</th>
+                        <td>This parameter is used to add classes to the button that will appear below the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">buttonTime</th>
+                        <td>This parameter is used to configure the time at which the button will appear below the video.<br /><br />
+
+                          Important note: This parameter must be entered in seconds only.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">window</th>
+                        <td>This parameter is used to configure if the button below the video will open in a new tab, by default the value is false so that the link is opened within the same window, but it can be added and changed to true so that the link is opened in a new tab without replacing the current one.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">full</th>
+                        <td>This parameter is used to configure whether to show/hide the fullscreen button of the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">playBtnColor</th>
+                        <td>This parameter is used to configure the color of the play button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">playColor</th>
+                        <td>This parameter is used to configure the color of the play button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">pauseColor</th>
+                        <td>This parameter is used to configure the color of the pause button on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressColor</th>
+                        <td>This parameter is used to configure the color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressBar</th>
+                        <td>This parameter is used to configure the background color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">progressBgColor</th>
+                        <td>This parameter is used to configure the background color of the progress bar on the video.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">theme</th>
+                        <td>This parameter is used to choose previously preconfigured themes for the styles to be used on the player, currently there are two in this player (rogue and theme1).</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">tracking</th>
+                        <td>This parameter is used to choose to show or hide the video progress (time).</td>
                       </tr>
                     </tbody>
                   </table>
